@@ -1,0 +1,26 @@
+/* styles.css */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Tailwind Custom Colors */
+.text-gold-500 {
+    color: #d4af37;
+}
+
+.bg-gray-800 {
+    background-color: #2d3748;
+}
+
+.bg-gray-900 {
+    background-color: #1a202c;
+}
