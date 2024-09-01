@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h2>Welcome, {{ user.username }}</h2>
+
+    <p>User ID: {{ user.username }}</p>
+    <p>Name: {{ user.first_name }}</p>
+
+    <a href="{% url 'update' %}">Update Your Information</a><br>
+    <a href="{% url 'delete' %}">Delete Your Account</a><br>
+
+    <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>

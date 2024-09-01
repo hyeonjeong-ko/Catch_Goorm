@@ -1,0 +1,25 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Django static files (if auto-generated)
+static/
+
+# Sensitive settings
+*.env
+settings.py
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Docker files
+docker-compose.yml
+Dockerfile
+
+# IDE/Editor directories
+.vscode/
+.idea/
+
+# Script files
+wait-for-it.sh
